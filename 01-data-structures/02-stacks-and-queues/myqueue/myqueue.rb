@@ -15,13 +15,9 @@ class MyQueue
   end
 
   def dequeue
-    temp = @queue[0]
-    @queue.each_with_index do |item, index|
-      index -= 1
-    end
+    temp = @queue.last
     @queue.delete(temp)
-    @head = @queue[0]
-    @tail = @queue[-1]
+    return temp
   end
 
   def empty?
