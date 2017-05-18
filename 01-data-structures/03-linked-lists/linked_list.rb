@@ -42,10 +42,13 @@ class LinkedList
     elsif @tail == node
       @tail = @tail.prev
     else
-      while (current_node.next != nil)&&(current_node.next != node)
+      while (current_node.next != nil) && (current_node.next != node)
         current_node = current_node.next
       end
       current_node.next = current_node.next.next
+
+      # cureent_node.prev.next = current_node.next
+      # current_node.next.prev = current_node.prev
     end
   end
 
