@@ -20,7 +20,7 @@ RSpec.describe SeparateChaining, type: Class do
       expect(i).to eq 4
     end
   end
-
+  
   describe "#key" do
     it "returns the sum of the ascii values of the string value" do
       key = "test"
