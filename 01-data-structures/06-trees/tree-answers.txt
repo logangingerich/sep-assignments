@@ -1,0 +1,33 @@
+Insert all numbers from 1 to 100000 into both Trees, then use Benchmark to
+compare performance:
+How much time does an average insertion consume in the Binary Search Tree
+compared to the Heap?
+    user     system      total           real
+tree insert  0.050000   0.000000   0.050000 (  0.053858)
+heap insert  0.030000   0.000000   0.030000 (  0.026047)
+-Insertion using the Min Binary Heap appears to be slightly faster.
+
+How much time does finding 50000 in the Binary Search Tree consume compared to
+the Heap?
+user        system      total           real
+tree find  0.000000   0.000000   0.000000 (  0.000017)
+heap find  0.000000   0.000000   0.000000 (  0.000009)
+-Finding node 5000 also appears to be slightly faster with Heap.
+
+How much time does the average deletion consume in a Binary Search Tree compared
+to the Heap?
+user          system      total           real
+tree delete  0.000000   0.000000   0.000000 (  0.000010)
+heap delete  0.000000   0.000000   0.000000 (  0.000028)
+-Deleting an item using the Binary Search Tree appears to be somewhat faster.
+
+When would you use a Binary Search Tree and why?
+-A Binary Search tree is probably best to use if the data needs to be structured
+and sorted in a very exact manner. Every left-right child node in a BST is sorted
+according to value, whereas in a heap the only specific structure necessary is
+that parent node values must be higher (or lower, in cases of a min binary heap)
+than their children.
+
+When would you use a Heap and why?
+-If speed of insertion or finding is the most important element to you, it would
+probably be best to use a heap structure.

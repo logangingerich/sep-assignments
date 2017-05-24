@@ -1,25 +1,30 @@
 require_relative 'node'
 
-class BinarySearchTree
+class MinBinaryHeap
+  attr_reader :root
 
   def initialize(root)
     @root = root
   end
 
   def insert(root, data)
+    #if data rating is less than root, data becomes the new root
+    #then, insert is run recursively with the new root, using
+    #old root as a new data
     if root.rating > data.rating
+      temp = root
+      @root = data
+      data = temp
+      insert(@root, data)
+    else
       if root.left.nil?
         root.left = data
-      else
-        #Uses recursion to search for first nil node on left side
-        insert(root.left, data)
-      end
-    elsif root.rating < data.rating
-      if root.right.nil?
+      elsif root.right.nil? && root.left != nil
         root.right = data
-      else
-        #Uses recursion to search for first nil node on left side
+      elsif root.left != nil && root.right != nil && root.left.left != nil && root.left.right != nil
         insert(root.right, data)
+      elsif root.left != nil && root.right != nil
+        insert(root.left, data)
       end
     end
   end
@@ -41,7 +46,7 @@ class BinarySearchTree
   end
 
   def delete(root, data)
-    if root == nil || data == nil
+    if data == nil
       nil
     else
       node_to_delete = find(root, data)
@@ -55,7 +60,7 @@ class BinarySearchTree
   end
 
   # Recursive Breadth First Search
-  def printf(children=nil)
+  def print(children=nil)
     queue = Queue.new
     #Add the root to the queue
     queue.enq(@root)
