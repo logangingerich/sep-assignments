@@ -18,7 +18,7 @@ class BinarySearchTree
       if root.right.nil?
         root.right = data
       else
-        #Uses recursion to search for first nil node on left side
+        #Uses recursion to search for first nil node on right side
         insert(root.right, data)
       end
     end
