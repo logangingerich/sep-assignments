@@ -1,0 +1,31 @@
+Describe three or more primitive algorithms used in your day-to-day life.
+1. Brushing Teeth
+  Apply toothpaste to toothbrush bristles
+  Run water over bristles
+  UNTIL teeth are clean
+    Brush bristles against teeth
+  END
+  UNTIL toothpaste is cleared from mouth
+    Rinse mouth with water
+  END
+  Rinse toothbrush
+
+2. Sending an Email
+  Open email account page from device
+  Select the 'COMPOSE' button
+  Enter address of recipient into the 'To' line
+  Enter subject of email into the 'Subject' line
+  WHILE message is incomplete
+    Compose message in body of email
+  END
+  Select the 'Send' button
+
+3. Making and eating a Sandwich
+  Gather two slices of bread and desired internal ingredients
+  Spread any sauces (Mayo, Sriracha, etc.) on inside of bread
+  Place any meats, cheeses or vegetable on top of one piece of bread, on
+  sauce side.
+  Stack the second piece of bread on top of ingredients, sauce side down.
+  UNTIL Sandwich is gone
+    Bite, chew and swallow pieces from sandwich
+  END
