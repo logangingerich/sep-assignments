@@ -1,0 +1,5 @@
+Explain why doubling the size of the underlying array of your HashClass may
+be a poor idea.
+-Frequently doubling the size of the underlying array will lead to many unused
+slots in the array, and therefore is an inefficient use of storage and memory.
+It is also a relatively slow operation.

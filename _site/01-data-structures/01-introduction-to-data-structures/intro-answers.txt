@@ -1,0 +1,41 @@
+LINE ANSWERS
+How does your data structure allow developers to access and
+manipulate the data?
+-Developers can access and manipulate through several methods
+built into the line class. They can add members via the join method
+and remove members via the leave method. They can find which member is
+in the front, back or middle with the front, middle and back methods.
+They can also perform a search for a particular member with the search
+method.
+
+If a developer wanted to find a specific element in your data
+structure, how would you search for it?
+-The search method would allow the developer to pass in a name
+and see whether or not that person is in the line. They can also
+find any member's position in the line, or index number, by passing
+the name into the index method.
+
+What other real-world data can each structure represent?
+-This data structure could also be used for something like a
+waiting list for a college class.
+
+SCREEN ANSWERS
+How does your data structure allow developers to access and
+manipulate the data?
+-A developer could initialize an instance of a pixel using the
+Pixel class and passing in RGB colors and an xy matrix location.
+They can also initialize a pixel matrix in the Screen class by
+passing in width and height. They can then add an instance of a
+pixel to the matrix by using the insert method and passing it the
+pixel and height/width.
+
+If a developer wanted to find a specific element in your data
+structure, how would you search for it?
+-A developer could find what specific pixel is at a particular
+matrix coordinate by using the 'at' method and passing in
+height and width values.
+
+What other real-world data can each structure represent?
+-This data structure could be useful in representing any type
+of simple matrix of information. You could also use it for simple data
+encryption or a game such as Battleship.

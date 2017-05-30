@@ -1,0 +1,39 @@
+What is Spatial Locality and why does it benefit performance?
+-Spatial Locality is the concept that the likelihood of referencing a particular
+resource is higher if a resource near it was just referenced. So, when the
+processor retrieves data from RAM and adds it to the Cache, it retrieves an
+entire range of locations, not just a single location.
+This benefits performance by reducing the number of times the computer must read
+from RAM.
+
+Compare the time it takes to create a 10,000 item Array to appending 10,000
+items to a Linked List.
+
+Array creation test
+0.000000   0.000000   0.000000 (  0.002212)
+Linked List creation test
+0.000000   0.000000   0.000000 (  0.003632)
+
+The array creation appears to be slightly faster.
+
+Compare the time it takes to access the 5000th element of the Array and the
+5000th Node in the Linked List.
+
+Array access item 5,000 test
+0.000000   0.000000   0.000000 (  0.000036)
+Linked List access item 5,000 test
+0.000000   0.000000   0.000000 (  0.000438)
+
+Accessing the 5,000th item in the array is much faster, presumably because it
+doesn't require iterating over every previous item.
+
+Compare the time it takes to remove the 5000th element from the Array to
+removing the 5000th Node in the Linked List.
+
+Array delete item 5,000 test
+0.000000   0.000000   0.000000 (  0.000019)
+Linked List delete item 5,000 test
+0.000000   0.000000   0.000000 (  0.000387)
+
+Again, deleting the 5000th element from the Array appears to be faster, as it
+doesn't require iterating over every item previous to the 5,000th.
