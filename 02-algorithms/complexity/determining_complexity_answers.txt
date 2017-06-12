@@ -1,0 +1,27 @@
+1. Just like the 'Hello World' example in the checkpoint, this algorithm will
+always take to same time to execute, and is therefore constant. This means that
+the Big-O is O(1).
+
+2. In a worst case scenario, the largest item would be at the very end of the
+collection, and you would have to iterate through the entire array. This means
+that means that as the collection grows, the number of operations grows at the
+same rate, linearly. This means the Big-O is O(n).
+
+3. This algorithm is very similar to the previous algorithm, except that it adds
+an extra layer. We are iterating through a collection of collections, looking
+for one specific item. This means that the algorithm must run n times through
+the first layer and n times through the second layer. This gives us n*n, and
+a Big-O of O(n^2).
+
+4. It is clear that this is the recursive Fibonacci sequence algorithm and that
+we need to calculate numbers(n) = numbers(n-1) + numbers(n-2) + O(n). This is
+equal to numbers(n) = O(2^n-1) + O(2^n-2) + O(1). This can furthers be worked
+down to O(2^n).
+
+5. Just like the algorithm in problem #2, this is an iterative algorithm, whose
+number of operations grow at the same rate as the input. This gives it a Big-O
+of O(n).
+
+6. The worst case scenario for this version of quicksort is when the pivot is the
+smallest or largest element. This would mean that we would repeat the algorithm
+n-1 times, and would have a big-O of O(n^2).
