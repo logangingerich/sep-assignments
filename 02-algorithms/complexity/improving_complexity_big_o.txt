@@ -1,0 +1,11 @@
+1. Big-O of Version One: Being a pretty straightforward version of the insertion
+sort, the Big-O of this version would be O(n^2). Several code optimizations are
+made here, most notably in combining the array arguments.
+
+2. Big-O of Version Two: In order to improve time complexity, I used a merge
+sort instead of an insertion sort. I did this because merge sort has a slightly
+more efficient time complexity of O(n log n).
+
+3. Big-O of Version Three: I re-wrote this sorting algorithm, using a quick sort
+instead of an insertion sort. Quick sort has a space complexity of O(log n),
+making it one of the best choices for spatial efficiency.
